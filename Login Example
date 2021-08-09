@@ -1,0 +1,19 @@
+def login():
+    print("Please Create Account Now")
+
+    username = input("Enter Username: ")
+    password = input("Enter Password: ")
+    print("Your Account has been successfully created! \n Please Log in")
+
+    username2 = input("Enter Your Username Here: ")
+    password2 = input("Enter Your Password Here: ")
+
+    while username != username2 or password != password2:
+        print("Incorrect Credentials! Please try again")
+        username2 = input("Enter Your Username Here: ")
+        password2 = input("Enter Your Password Here: ")
+        if username ==  username2 and password == password2:
+            print("You have successfully signed in. Access Granted.")
+            break
+
+    return 1
